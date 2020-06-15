@@ -1,0 +1,10 @@
+{
+  "name": "LinkToText",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "Copy a link that scrolls straight to the selected text on any page",
+  "permissions": ["contextMenus"],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
