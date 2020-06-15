@@ -14,7 +14,7 @@ function copy(text) {
 function handleContextMenuClick(info, tab) {
   // console.log(info, tab);
   const url = new URL(info.pageUrl);
-  url.hash = `#:~:text=${info.selectionText}`;
+  url.hash = `#:~:text=${encodeURIComponent(info.selectionText)}`;
   copy(url.href);
 }
 
